@@ -5,14 +5,7 @@
 /* **************************** */
 
 body {
-  background-image: radial-gradient(
-    circle,
-    #415d5f,
-    #334b4e,
-    #253a3d,
-    #18292d,
-    #0b1a1d
-  );
+  background-image: $color-background;
 
   display: flex;
   flex-direction: column;

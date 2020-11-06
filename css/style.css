@@ -34,19 +34,10 @@
 /* **************************** */
 body {
   background-image: radial-gradient(circle, #415d5f, #334b4e, #253a3d, #18292d, #0b1a1d);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   height: 100vh;
 }
 
@@ -83,110 +74,94 @@ body {
 /* GRIDS */
 /* **************************** */
 .main__formulario {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1fr auto auto;
-      grid-template-columns: auto 1fr auto auto;
-  -ms-grid-rows: 0px (40px)[3] (auto)[2] 30px;
-      grid-template-rows: 0px repeat(3, 40px) repeat(2, auto) 30px;
+  grid-template-columns: auto 1fr auto auto;
+  grid-template-rows: 0px repeat(3, 40px) repeat(2, auto) 30px;
   gap: 1rem;
 }
 
 .formulario__nombre {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
   grid-row: 2/3;
 }
 
 .formulario__inputNombre {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
   grid-row: 2/3;
 }
 
 .formulario__email {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
   grid-row: 3/4;
 }
 
 .formulario__inputEmail {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
   grid-row: 3/4;
 }
 
 .formulario__localidad {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
   grid-row: 4/5;
 }
 
 .formulario__inputLocalidad {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
   grid-row: 4/5;
 }
 
 .formulario__tituloEncuesta {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 1;
   grid-row: 5/6;
 }
 
 .formulario__corchete {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
   grid-column: 3/4;
   grid-row: 1/span-1;
   font-size: 24.5625rem;
   font-family: "Rouge Script";
   line-height: 0;
   font-weight: 100;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .formulario__enviar {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
   grid-column: 4/5;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
   grid-row: 4/5;
 }
 
 #encuesta {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 6;
-  -ms-grid-row-span: 1;
   grid-row: 6/7;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* **************************** */
 /* FORMULARIOS */
 /* **************************** */
+.formulario__inputNombre {
+  padding: 10px;
+}
+
+.formulario__inputNombre::placeholder {
+  color: blueviolet;
+  font-style: italic;
+}
+
+.formulario__inputEmail {
+  padding: 10px;
+}
+
+.formulario__inputEmail::placeholder {
+  color: blueviolet;
+  font-style: italic;
+}
+
+.formulario__inputLocalidad {
+  padding: 10px;
+}
+
+.formulario__inputLocalidad::placeholder {
+  color: blueviolet;
+  font-style: italic;
+}
+/*# sourceMappingURL=style.css.map */

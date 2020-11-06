@@ -6,14 +6,29 @@
     &__nombre {
     }
     &__inputNombre {
+      padding: 10px;
+      &::placeholder{
+        color: blueviolet;
+        font-style: italic;;
+        }
     }
     &__email {
     }
     &__inputEmail {
+      padding: 10px;
+      &::placeholder{
+        color: blueviolet;
+        font-style: italic;;
+        }
     }
     &__localidad {
     }
     &__inputLocalidad {
+      padding: 10px;
+      &::placeholder{
+        color: blueviolet;
+        font-style: italic;;
+        }
     }
     &__tituloEncuesta {
     }
